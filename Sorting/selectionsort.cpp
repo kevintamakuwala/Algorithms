@@ -5,6 +5,7 @@ using namespace std;
 void selectionSort(int a[], int n)
 {
     int i, j, min;
+    
     for (int i = 0; i < n - 1; i++)
     {
         min = i;

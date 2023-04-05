@@ -36,6 +36,7 @@ void quickSort(int *a, int s, int e)
         return;
 
     int p = partition(a, s, e);
+    
     quickSort(a, s, p - 1);
     quickSort(a, p + 1, e);
 }

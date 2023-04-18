@@ -1,22 +1,25 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define ll long long
-#define M 1000000007
-/*
-{
-    node *curr = head, *prev = NULL, next = NULL;
-    while(curr!=NULL)
-    {
-        forward=curr->next;
-        curr->next=prev;
-        prev=curr;
-        curr=forward;
-    }
-    head=prev;
-}
-*/
-int main()
-{
 
-    return 0;
+/*
+    Reverse a linked list if its head is given.
+
+    Param: head of a Linked List.
+    Returns: head of reversed Linked list.
+*/
+class Solution{
+    public:
+    node *reverseLL(node *head)
+    {
+        node *curr = head, *prev = NULL, next = NULL;
+        
+        while(curr)
+        {
+            forward=curr->next;
+            curr->next=prev;
+            prev=curr;
+            curr=forward;
+        }
+        head=prev;
+
+        return head;
+    }
 }

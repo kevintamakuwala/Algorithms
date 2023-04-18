@@ -16,6 +16,7 @@ int binary(int a[], int n, int l, int h, int key)
         else if (a[mid] > key)
             return binary(a, n, l, h - 1, key);
     }
+    
     return -1;
 }
 int bSearch(int a[], int n, int key)

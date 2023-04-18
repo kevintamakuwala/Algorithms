@@ -17,7 +17,9 @@ int main()
 {
     int a[] = {1,5,2,6,4,2,7};
     int n = sizeof(a) / sizeof(int);
+    
     bubbleSort(a, n);
+    
     for (int i = 0; i < n; i++)
     {
         cout << a[i] << ' ';

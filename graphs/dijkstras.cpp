@@ -10,7 +10,6 @@ vector<int> dijkstras(vector<vector<int>> adj[], int V, int S)
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
     dist[S] = 0;
-    
     pq.push({0, S});
 
     while (!pq.empty())

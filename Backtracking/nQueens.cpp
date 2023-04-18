@@ -14,6 +14,7 @@ void solve(int n, int col, vector<string> board, vector<int> leftRow, vector<int
             cout << endl;
         }
         cout << "\n\n\n\n\n";
+        
         return;
     }
     

@@ -1,4 +1,4 @@
 ## Algorithms
-C++ implementation of some of the Algorithms which I practiced on GFG and Leetcode.
-Images posted will have the famous interview problems implementation on GFG/Leetcode whereas .cpp file will have all the necessary algorithms practiced offline.
-Trying to post all the remaining problems/Algorithms soon :)
+C++ implementation of some of the Algorithms & Problems which I practiced on GFG and Leetcode along with the Problem description and URL.
+Hope this repository helps DSA aspirants to learn it in a structured way. 
+Trying to post as many implementations soon :)

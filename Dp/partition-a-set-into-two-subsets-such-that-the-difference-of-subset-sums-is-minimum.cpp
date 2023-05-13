@@ -4,7 +4,7 @@
 using namespace std;
 
 // Tabulation
-bool Tabulation(vector<int> &arr, int k, int n, vector<vector<bool>> &dp)
+int Tabulation(vector<int> &arr, int k, int n, vector<vector<bool>> &dp)
 {
     for (int i = 0; i <= n; i++)
     {
@@ -26,7 +26,17 @@ bool Tabulation(vector<int> &arr, int k, int n, vector<vector<bool>> &dp)
         }
     }
 
-    return dp[n][k];
+    int s1 = 0;
+    int mini = 1e9;
+    for (int i = 0; i <= k; i++)
+    {
+        if (dp[n][i])
+        {
+            s1 = i;
+            mini = min(mini, abs(s1 - k + s1));
+        }
+    }
+    return mini;
 }
 // SpaceOptimization
 int SpaceOptimization(vector<int> &arr, int k, int n)

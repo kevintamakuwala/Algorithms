@@ -28,7 +28,7 @@ int Tabulation(vector<int> &arr, int k, int n, vector<vector<bool>> &dp)
 
     int s1 = 0;
     int mini = 1e9;
-    for (int i = 0; i <= k; i++)
+    for (int i = 0; i <= k/2; i++)
     {
         if (dp[n][i])
         {
@@ -63,7 +63,7 @@ int SpaceOptimization(vector<int> &arr, int k, int n)
     }
     int s1 = 0;
     int mini = 1e9;
-    for (int i = 0; i <= k; i++)
+    for (int i = 0; i <= k/2; i++)
     {
         if (prev[i])
         {

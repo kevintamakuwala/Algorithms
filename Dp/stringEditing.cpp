@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define M 1000000007
 
 int stringEditing(string s1, string s2)
 {
@@ -28,6 +26,5 @@ int stringEditing(string s1, string s2)
 int main()
 {
     cout<<stringEditing("Saturday","Sunday");
-
     return 0;
 }

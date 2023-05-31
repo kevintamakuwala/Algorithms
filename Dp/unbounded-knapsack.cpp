@@ -66,7 +66,7 @@ public:
     }
 };
 
-// Space Optimization
+// Space Optimization using two rows
 class Solution {
     
     int solve(int N,int W,int val[],int wt[])
@@ -91,6 +91,37 @@ class Solution {
         }
         return prev[W];
         
+    }
+public:
+    int knapSack(int N, int W, int val[], int wt[])
+    {
+        return solve(N-1,W,val,wt);
+    }
+};
+
+//  Space Optimization using one row
+class Solution{
+    
+    int solve(int N,int W,int val[],int wt[])
+    {
+        vector<int>prev(W+1);
+        for(int i=0;i<=W;i++){
+            prev[i]=val[0]*(i/wt[0]);
+        }
+        for(int i=1;i<=N;i++)
+        {
+            for(int j=0;j<=W;j++)
+            {
+                int take = -1e9;
+                int nt = prev[j];
+                if(j-wt[i]>=0)
+                {
+                    take=prev[j-wt[i]]+val[i];
+                }
+                prev[j]=max(take,nt);
+            }
+        }
+        return prev[W];
     }
 public:
     int knapSack(int N, int W, int val[], int wt[])
